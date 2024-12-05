@@ -59,7 +59,7 @@ const BlogPage = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/blog/posts/')
+    fetch('https://nolimit-moialbert.fjyxll.easypanel.host/blog/posts/')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

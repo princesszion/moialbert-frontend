@@ -24,7 +24,7 @@ const EventsPage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://127.0.0.1:8000/blog/events/', formData)
+        axios.post('https://nolimit-moialbert.fjyxll.easypanel.host/blog/events/', formData)
             .then(response => {
                 alert('Event booked successfully');
             })

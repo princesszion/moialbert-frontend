@@ -142,7 +142,7 @@ const BlogDetail = () => {
 
   const fetchBlogDetails = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:8000/blog/posts/${id}/`);
+      const response = await fetch(`https://nolimit-moialbert.fjyxll.easypanel.host/blog/posts/${id}/`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -155,7 +155,7 @@ const BlogDetail = () => {
 
   const fetchComments = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:8000/blog/posts/${id}/comments/`);
+      const response = await fetch(`https://nolimit-moialbert.fjyxll.easypanel.host/blog/posts/${id}/comments/`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -174,7 +174,7 @@ const BlogDetail = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://127.0.0.1:8000/blog/posts/${id}/comments/`,
+        `https://nolimit-moialbert.fjyxll.easypanel.host/blog/posts/${id}/comments/`,
         { content: newComment },
         {
           withCredentials: true,
